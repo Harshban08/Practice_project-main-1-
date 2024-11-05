@@ -59,7 +59,7 @@ app.post('/profile', upload.single('avatar'), async (req, res) => {
             filename: req.file.filename,
             path: req.file.path,
             size: req.file.size,
-        });
+        }); 
 
         await fileData.save(); // Save metadata to MongoDB
         console.log("File metadata saved:", fileData);

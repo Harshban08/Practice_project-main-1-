@@ -8,4 +8,4 @@ router.post("/register", registerDoctor);
 // Route to get all doctors
 router.get("/", getAllDoctors); // This route fetches all doctor details
 
-module.exports = router;
+module.exports = router; 
